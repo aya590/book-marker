@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>book-marker</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+   
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+    
+    <!-- ?link font -->
+   <link rel="stylesheet" href="./css/all.min.css">
+   <!-- ! link bootstrap -->
+   <link rel="stylesheet" href="./css/bootstrap.min.css">
+   <!-- *main style -->
+   <link rel="stylesheet" href="./css/style.css">
+   <!-- & media -->
+   <link rel="stylesheet" href="./css/media.css">
+</head>
+<body>
+    <div class="book-marker">
+        
+        <div class="container d-flex flex-column justify-content-center align-items-center  pt-5 mt-2">
+           <div class="title d-flex flex-column justify-content-center align-items-center">
+            <h1 class="  ">Bookmarker</h1>
+           </div>
+          
+           <h2 class="mt-4 mb-5"><i class="fa-solid fa-bookmark"></i> Bookmark your favorite sites <i class="fa-solid fa-bookmark"></i></h2>
+        
+        
+           <form  class=" w-100">
+
+            <label class="mb-2 " for="name"> <i class="fa-solid fa-book-bookmark pe-2"></i> Site Name</label>
+         </br>
+            <input id="name" placeholder="Bookmark Name" class="form-control " oninput="validate( nameRegex,inputName  )"/>
+        </br>
+           <label class="mb-2"  for= "name" > <i class="fa-solid fa-link pe-2"></i> Site URL</label>
+        </br>
+            <input id="url" placeholder="Website URL" class="form-control " oninput="validate(urlRegex,inputurl  )"/>
+        </br>
+
+        <div class="submit-button d-flex justify-content-center align-items-center">
+            <button  class=" btn  px-5 " type="button" onclick="adddata()"> submit </button>
+        </div>
+        
+         </form>
+
+         <table class="table mt-4 text-center">
+            <thead>
+                <tr class="fw-bolder">
+                    <td> Index</td>
+                    <td>Website Name</td>
+                    <td>Visit</td>
+                    <td>Delete</td>
+                </tr>
+            </thead>
+            <tbody id="datacontainer">
+               <tr>
+                </tr> 
+    
+            </tbody>
+         </table>
+    <div id="massage" class="d-none">
+        <div class="circles d-flex mb-3">
+            <span class="rounded-circle me-2"></span>
+            <span class="rounded-circle me-2"></span>
+            <span class="rounded-circle me-2"></span>
+          </div>
+          <p class="m-0 pb-2">
+            Site Name or Url is not valid, Please follow the rules below :
+          </p>
+          <ol class="rules list-unstyled m-0">
+            <li>
+              <i class="fa-regular fa-circle-right p-2"></i>Site name must
+              contain at least 3 characters
+            </li>
+            <li>
+              <i class="fa-regular fa-circle-right p-2"></i>Site URL must be a
+              valid one
+            </li>
+          </ol>
+    </div>
+
+       
+
+        </div>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="./js/index.js"> </script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

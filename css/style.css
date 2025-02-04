@@ -1,0 +1,149 @@
+
+
+body {
+  margin-top:0px;
+  font-family: "PT Sans Caption", sans-serif;
+}
+
+::selection {
+
+     background-color: #fec260;
+}
+
+.book-marker{
+    min-height: 100vh;
+    background-color:  #f7ecde;
+}
+
+.title{
+    border-bottom:  dotted 2px black;
+  
+    width: 100%;
+}
+
+ h1 {
+    width: fit-content;
+    font-size: 50px;
+    font-family: "Pacifico", cursive;
+    color: #352e28;
+    isolation: isolate;
+    position: relative;
+    margin-bottom: 60px; 
+
+ 
+
+}
+
+ h1::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 30%;
+        left: 0;
+        bottom: 2px;
+        background-color: #fec260;
+        transition: height 350ms;
+        z-index: -1;}
+
+
+       h1:hover::before {
+            height: 60%;
+        }
+
+  h2{
+    font-family: "Righteous", sans-serif;
+    font-size: 25px;
+    background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+   label{ 
+    font-weight: 600;
+   }   
+   
+   
+  .submit-button button {
+   color : #fff;
+ background-color: #d1512d;
+   
+    border: #a03315;
+}
+
+.submit-button button:hover{
+ background-color: #bb4120 ;
+ color: #fff ;
+}
+
+form{
+    border-bottom:  dotted 2px black; 
+    padding-bottom: 50px;
+}
+
+.visit-button {
+   color: #fff;
+   background-color: #9eb23b;
+      border-color: #9eb23b;
+}
+.visit-button:hover{
+    color:#fff ;
+    background-color: #8a9e23 ;
+    border-color: #9eb23b;
+}
+
+.delet-button{
+   color: #fff;
+    background-color: #eb1d36;
+    border-color: #eb1d36;
+}
+
+
+.delet-button:hover{
+    color:  #fff;
+    background-color:  #d30820;
+    border-color:#eb1d36
+}
+
+.form-control:focus {
+    box-shadow:  1px -1px 12px 1px  #fec260 !important;
+}
+
+a { text-decoration-line: none;
+color: white;
+}
+
+
+.circles span:nth-child(1) {
+    background-color: #f15f5d;
+}
+.circles span {
+    display: block;
+    width: 20px;
+    height: 20px;
+}
+
+.rounded-circle {
+    border-radius: 50%!important;
+}
+.me-2 {
+    margin-right: 0.5rem!important;
+}
+.circles span:nth-child(2) {
+    background-color: #febe2e;
+}
+.circles span:nth-child(3) {
+    background-color: #4db748;
+}
+.rules i {
+    color: #bb4120;
+}
+
+#massage{background-color: white
+    ;
+    padding: 20px 10px;
+    position: absolute;
+    left: 30%;
+  top: 20%;
+  transition: all 500ms;
+
+}
